@@ -5,6 +5,38 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_pedidos"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Pedidos" />
+        <item
+            android:id="@+id/nav_cuentasPorCobrar"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Cuentas por Cobrar" />
+        <item
+            android:id="@+id/nav_georeferenciacion"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Georeferenciación" />
+        <item
+            android:id="@+id/nav_cobranzas"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Cobranzas" />
+        <item
+            android:id="@+id/nav_visitas"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Visitas" />
+        <item
+            android:id="@+id/nav_presupuesto"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Presupuesto" />
+        <item
+            android:id="@+id/nav_entregaDePedidos"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Entrega de Pedidos" />
+        <item
+            android:id="@+id/nav_Ajustes"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Ajustes" />
+        <item
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_menu_camera"
             android:title="Import" />
@@ -32,6 +64,10 @@
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"
                 android:title="Send" />
+            <item
+                android:id="@+id/nav_salir"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Salir" />
         </menu>
     </item>
 

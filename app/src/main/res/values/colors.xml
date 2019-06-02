@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
+
+    <!--   NARANJA   -->
+    <!--color name="colorPrimary">#f9a75e</color>
+    <color name="colorPrimaryDark">#f5821f</color>
+    <color name="colorAccent">#7a1777</color-->
+
+    <!--   NARANJA 2  -->
+    <color name="colorPrimary">#f5821f</color>
+    <color name="colorPrimaryDark">#ff5000</color>
+    <color name="colorAccent">#9d1e99</color>
+
+    <!--   AMARILLO   -->
+    <!--color name="colorPrimary">#ffe600</color>
+    <color name="colorPrimaryDark">#e7b809</color>
+    <color name="colorAccent">#7a1777</color-->
+
+    <!--   VERDE   -->
+    <!--color name="colorPrimary">#00a99c</color>
+    <color name="colorPrimaryDark">#008e83</color>
+    <color name="colorAccent">#7a1777</color-->
+
+    <!--   MORADO   -->
+    <!--color name="colorPrimary">#9d1e99</color>
+    <color name="colorPrimaryDark">#7a1777</color>
+    <color name="colorAccent">#f5821f</color-->
+
+    <!--   COLORES ORIGINALES   -->
+    <!--color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#D81B60</color-->
 </resources>
