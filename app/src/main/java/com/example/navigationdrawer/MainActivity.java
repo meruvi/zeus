@@ -3,6 +3,8 @@ package com.example.navigationdrawer;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -80,18 +83,34 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        Fragment fragment = null;
+        Bundle args = new Bundle();
 
-        } else if (id == R.id.nav_slideshow) {
+        if (id == R.id.nav_pedidos) {
+            fragment = TabbedActivityPedido.newInstance();
+            //args.putSerializable("personal", personal);
+        } else if (id == R.id.nav_cuentasPorCobrar) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_georeferenciacion) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_cobranzas) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_visitas) {
 
+        } else if (id == R.id.nav_presupuesto) {
+
+        } else if (id == R.id.nav_entregaDePedidos) {
+
+        } else if (id == R.id.nav_ajustes) {
+
+        } else if (id == R.id.nav_salir) {
+            Toast.makeText(this, "Presionó salir de Zeus", Toast.LENGTH_SHORT).show();
+        }
+
+        if(fragment != null) {
+            fragment.setArguments(args);
+            FragmentManager fragmentManager = this.getSupportFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
