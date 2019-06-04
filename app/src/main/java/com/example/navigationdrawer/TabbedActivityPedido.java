@@ -3,6 +3,7 @@ package com.example.navigationdrawer;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -14,6 +15,8 @@ import android.view.ViewGroup;
 import java.util.Locale;
 
 public class TabbedActivityPedido extends Fragment {
+
+    private TabLayout tabLayout;
 
     SectionsPagerAdapter mSectionsPagerAdapter;
     public static final String TAG = TabbedActivityPedido.class.getSimpleName();
@@ -47,6 +50,10 @@ public class TabbedActivityPedido extends Fragment {
 
         mViewPager = (ViewPager) v.findViewById(R.id.pager);
         mViewPager.setAdapter(mSectionsPagerAdapter);
+
+        //Initializing the tablayout
+        tabLayout = (TabLayout) v.findViewById(R.id.tablayout);
+        tabLayout.setupWithViewPager(mViewPager);
 
         return v;
     }
