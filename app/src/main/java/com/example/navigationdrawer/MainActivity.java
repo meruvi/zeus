@@ -16,15 +16,22 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+import com.example.navigationdrawer.pedido.TabbedActivityPedido;
+
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
+    Toolbar toolbar;
+    DrawerLayout drawer;
+    NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
+        inicializarToolbar();
+
+        inicializarNavigationMenu();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -34,14 +41,22 @@ public class MainActivity extends AppCompatActivity
                         .setAction("Action", null).show();
             }
         });
+    }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+    private void inicializarToolbar() {
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        setTitle(getString(R.string.app_name));
+        toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
+    }
+
+    private void inicializarNavigationMenu() {
+        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
 
@@ -86,25 +101,28 @@ public class MainActivity extends AppCompatActivity
         Fragment fragment = null;
         Bundle args = new Bundle();
 
-        if (id == R.id.nav_pedidos) {
-            fragment = TabbedActivityPedido.newInstance();
-            //args.putSerializable("personal", personal);
-        } else if (id == R.id.nav_cuentasPorCobrar) {
-
-        } else if (id == R.id.nav_georeferenciacion) {
-
-        } else if (id == R.id.nav_cobranzas) {
-
-        } else if (id == R.id.nav_visitas) {
-
-        } else if (id == R.id.nav_presupuesto) {
-
-        } else if (id == R.id.nav_entregaDePedidos) {
-
-        } else if (id == R.id.nav_ajustes) {
-
-        } else if (id == R.id.nav_salir) {
-            Toast.makeText(this, "Presionó salir de Zeus", Toast.LENGTH_SHORT).show();
+        switch (id) {
+            case R.id.nav_pedidos:
+                fragment = TabbedActivityPedido.newInstance();
+                //args.putSerializable("personal", personal);
+                break;
+            case R.id.nav_cuentasPorCobrar:
+                break;
+            case R.id.nav_georeferenciacion:
+                break;
+            case R.id.nav_cobranzas:
+                break;
+            case R.id.nav_visitas:
+                break;
+            case R.id.nav_presupuesto:
+                break;
+            case R.id.nav_entregaDePedidos:
+                break;
+            case R.id.nav_ajustes:
+                break;
+            case R.id.nav_salir:
+                Toast.makeText(this, "Presionó salir de Zeus", Toast.LENGTH_SHORT).show();
+                break;
         }
 
         if(fragment != null) {
