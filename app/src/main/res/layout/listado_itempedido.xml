@@ -14,6 +14,7 @@
             android:layout_height="match_parent"
             android:textSize="30dp"
             android:padding="15dp"
+            android:textColor="@color/colorTextPrimaryDark"
             android:text="texto reemplazado" />
 
         <TextView
@@ -21,12 +22,14 @@
             android:layout_height="match_parent"
             android:textSize="30dp"
             android:padding="15dp"
+            android:textColor="@color/colorTextPrimaryLight"
             android:text="texto reemplazado" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="30dp"
             android:padding="15dp"
+            android:textColor="@color/colorTextPrimaryDisable"
             android:text="texto reemplazado" />
 
         <TextView

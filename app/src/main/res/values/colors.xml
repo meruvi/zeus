@@ -7,10 +7,10 @@
     <color name="colorAccent">#7a1777</color-->
 
     <!--   NARANJA 2  -->
-    <color name="colorPrimary">#f5821f</color>
+    <!--color name="colorPrimary">#f5821f</color>
     <color name="colorPrimaryDark">#ff5000</color>
     <color name="colorAccent">#9d1e99</color>
-    <color name="colorAccentLight">#B533B1</color>
+    <color name="colorAccentLight">#B533B1</color-->
 
     <!--   AMARILLO   -->
     <!--color name="colorPrimary">#ffe600</color>
@@ -32,12 +32,26 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color-->
 
-    <color name="color_white">#ffffff</color>
-    <color name="color_black">#000000</color>
+    <!--   AZUL  -->
+    <color name="colorPrimary">#0091ea</color>
+    <!--color name="colorPrimaryDark">#499ebd</color-->
+    <color name="colorPrimaryDark">#164968</color>
+    <color name="colorAccent">#3dc502</color>
+    <color name="colorAccentLight">#164968</color>
+    <color name="colorBackgroundLight">#eaeaea</color>
 
-    <color name="colorTextPrimary">#FFFFFF</color>
-    <color name="colorTextDisable">#66FFFFFF</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#164968</color>
 
     <color name="background_white">#FFFFFF</color>
     <color name="background_light">#EEEEEE</color>
+
+    <!--   COLOR TEXTO   -->
+    <color name="colorTextPrimary">#FFFFFF</color>
+    <color name="colorTextDisable">#66FFFFFF</color>
+
+    <color name="colorTextPrimaryDark">#AA000000</color>
+    <color name="colorTextPrimaryLight">#66000000</color>
+    <color name="colorTextPrimaryDisable">#33000000</color>
+
 </resources>
