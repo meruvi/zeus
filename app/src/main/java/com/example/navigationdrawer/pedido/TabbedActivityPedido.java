@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -57,6 +58,17 @@ public class TabbedActivityPedido extends Fragment {
         tabLayout.setupWithViewPager(mViewPager);
 
         return v;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        //Checks to make sure fragment is still attached to activity
+        if (isAdded())
+        {
+            ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Pedidos");
+        }
     }
 
     // TODO: Rename method, update argument and hook method into UI event

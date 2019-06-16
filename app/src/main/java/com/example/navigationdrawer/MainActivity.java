@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.navigationdrawer.config.SincronizacionConfigActivity;
 import com.example.navigationdrawer.pedido.TabbedActivityPedido;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -119,6 +120,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_entregaDePedidos:
                 break;
             case R.id.nav_ajustes:
+                fragment = new SincronizacionConfigActivity();
+                //args.putSerializable("personal", personal);
                 break;
             case R.id.nav_salir:
                 Toast.makeText(this, "Presionó salir de Zeus", Toast.LENGTH_SHORT).show();

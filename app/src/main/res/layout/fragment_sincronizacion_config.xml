@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_white"
+    tools:context=".config.SincronizacionConfigActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:tint="#0095ff"
+                android:padding="20dp"
+                android:src="@drawable/ic_menu_manage"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                android:id="@+id/ajustes"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:text="Ajustes Servidor"
+
+                />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#eeeeee"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:tint="#0095ff"
+                android:padding="20dp"
+                android:src="@drawable/ic_menu_manage"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                android:id="@+id/sincronizacion"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:text="Actualizar Pedidos"
+
+                />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#eeeeee"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:tint="#0095ff"
+                android:padding="20dp"
+                android:src="@drawable/ic_menu_manage"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                android:id="@+id/sincronizacionDatosGenerales"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:text="Actualizar Datos Generales"
+
+                />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#eeeeee"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:tint="#0095ff"
+                android:padding="20dp"
+                android:src="@drawable/ic_menu_manage"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                android:id="@+id/sincronizacionOfertas"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:text="Actualizar Ofertas"
+
+                />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#eeeeee"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:tint="#0095ff"
+                android:padding="20dp"
+                android:src="@drawable/ic_menu_manage"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                android:id="@+id/sincronizacionCatalogo"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:text="Actualizar Catalogo"
+
+                />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#eeeeee"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:tint="#0095ff"
+                android:padding="20dp"
+                android:src="@drawable/ic_menu_manage"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                android:id="@+id/sincronizacionCuentasxCobrar"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:text="Actualizar Cuentas x Cobrar"
+
+                />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#eeeeee"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:tint="#0095ff"
+                android:padding="20dp"
+                android:src="@drawable/ic_menu_manage"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                android:id="@+id/sincronizacionUbicacionClientes"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:text="Actualizar Ubicacion Clientes"
+
+                />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#eeeeee"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:tint="#0095ff"
+                android:padding="20dp"
+                android:src="@drawable/ic_menu_manage"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                android:id="@+id/sincronizacionCobranzas"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:text="Actualizar Cobranzas"
+
+                />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#eeeeee"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:tint="#0095ff"
+                android:padding="20dp"
+                android:src="@drawable/ic_menu_manage"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                android:id="@+id/sincronizacionSeguimientoCampania"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:text="Actualizar Campañas"
+
+                />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#eeeeee"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:tint="#0095ff"
+                android:padding="20dp"
+                android:src="@drawable/ic_menu_manage"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                android:id="@+id/sincronizacionSeguimientoOfertaAcumulada"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:text="Actualizar Seguimiento Oferta Acumulada"
+
+                />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#eeeeee"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:tint="#0095ff"
+                android:padding="20dp"
+                android:src="@drawable/ic_menu_manage"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                android:id="@+id/enviarTabla"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:text="Datos Boletas"
+
+                />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#eeeeee"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:tint="#0095ff"
+                android:padding="20dp"
+                android:src="@drawable/ic_menu_manage"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                android:id="@+id/boletas"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="17sp"
+                android:gravity="center_vertical"
+                android:text="Boletas"
+
+                />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#eeeeee"/>
+
+            </LinearLayout>
+
+                </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
