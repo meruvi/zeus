@@ -45,6 +45,7 @@
 
     <color name="background_white">#FFFFFF</color>
     <color name="background_light">#EEEEEE</color>
+    <color name="background_transparent">#00000000</color>
 
     <!--   COLOR TEXTO   -->
     <color name="colorTextPrimary">#FFFFFF</color>

@@ -1,5 +1,6 @@
 package com.example.navigationdrawer;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     Toolbar toolbar;
     DrawerLayout drawer;
     NavigationView navigationView;
+
+    private Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -124,7 +127,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 //args.putSerializable("personal", personal);
                 break;
             case R.id.nav_salir:
-                Toast.makeText(this, "Presionó salir de Zeus", Toast.LENGTH_SHORT).show();
+                intent = new Intent(getApplicationContext(), LoginActivity.class);
                 break;
         }
 
@@ -132,6 +135,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             fragment.setArguments(args);
             FragmentManager fragmentManager = this.getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+        }else{
+            startActivity(intent);
+            finish();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
