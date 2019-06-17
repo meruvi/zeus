@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
 
+import com.example.navigationdrawer.android.util.Util;
+import com.example.navigationdrawer.android.version.MainV7;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -22,8 +25,10 @@ public class SplashScreenActivity extends AppCompatActivity {
         // Set portrait orientation
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-//        MainV7 mainV7=new MainV7();
-//        mainV7.init(getApplicationContext());
+        Util.copiarBD(getApplicationContext());
+
+        MainV7 mainV7=new MainV7();
+        mainV7.init(getApplicationContext());
 
         TimerTask task = new TimerTask() {
             @Override

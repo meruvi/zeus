@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             fragment.setArguments(args);
             FragmentManager fragmentManager = this.getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
-        }else{
+        }else if(intent != null){
             startActivity(intent);
             finish();
         }
